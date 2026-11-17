@@ -1,0 +1,26 @@
+
+name: Feature CI
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+      - '!feature/wip'
+    paths:
+      - 'src/**'
+
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+
+jobs:
+  test-feature:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show commit information
+        run: |
+          echo "Commit SHA: ${{ github.sha }}"
+          echo "Branch: ${{ github.ref }}"
