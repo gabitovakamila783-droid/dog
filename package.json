@@ -1,0 +1,11 @@
+
+{
+  "name": "github-actions-practice",
+  "version": "1.0.0",
+  "description": "CI practice project",
+  "scripts": {
+    "lint": "node --check src/app.js",
+    "test": "node --test",
+    "build": "node build.js"
+  }
+}
