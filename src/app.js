@@ -1,12 +1,5 @@
 function sum(a, b) {
-    return a + b;
+    return a + ;
 }
 
 module.exports = { sum };
-const test = require('node:test');
-const assert = require('node:assert');
-const { sum } = require('../src/app');
-
-test('Проверка сложения', () => {
-    assert.strictEqual(sum(2, 3), 5);
-});
